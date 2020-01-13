@@ -17,6 +17,6 @@
     @include set-background($danger-color);
   }
   &-white {
-    @include set-background($white-color);
+    @include set-background(#fff);
   }
 }
