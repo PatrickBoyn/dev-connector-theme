@@ -140,6 +140,27 @@ img {
     grid-area: edu;
   }
 
+  // I usuaully do :not(:last-child)
+  // However if I'm following a tutorial
+  // I just do whatever they do.
+  // I also usually do 1px dotted #aaa.
+  .profile-exp,
+  .profile-edu {
+    & > div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: #aaa 1px dotted;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
   .profile-github {
     grid-area: github;
   }
